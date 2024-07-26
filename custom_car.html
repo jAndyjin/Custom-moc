@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>积木车定制</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .container {
+            max-width: 600px;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+        }
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+        select, input[type="text"] {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+        }
+        .result {
+            margin-top: 20px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>定制你的积木车</h2>
+    <label for="model">选择车型：</label>
+    <select id="model">
+        <option value="sport">运动型</option>
+        <option value="suv">SUV</option>
+        <option value="truck">卡车</option>
+    </select>
+
+    <label for="color">选择颜色：</label>
+    <select id="color">
+        <option value="red">红色</option>
+        <option value="blue">蓝色</option>
+        <option value="green">绿色</option>
+    </select>
+
+    <label for="wheel">选择轮毂样式：</label>
+    <select id="wheel">
+        <option value="style1">样式1</option>
+        <option value="style2">样式2</option>
+        <option value="style3">样式3</option>
+    </select>
+
+    <button onclick="showResult()">显示结果</button>
+
+    <div class="result" id="result">
+        <h3>你的定制结果：</h3>
+        <p id="resultText">请选择配置并点击显示结果。</p>
+    </div>
+</div>
+
+<script>
+    function showResult() {
+        var model = document.getElementById("model
